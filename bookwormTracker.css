@@ -1,0 +1,57 @@
+/* 1. The Main Container */
+/* This holds the whole app. We make it wider than the login box */
+.container {
+    width: 500px;               /* Enough space for book details */
+    margin: 30px auto;          /* Centers it on the screen */
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;     /* Matches the login box border */
+    border-radius: 8px;
+}
+
+/* 2. The Header (Title + Logout) */
+header {
+    display: flex;              /* Puts items in a row */
+    justify-content: space-between; /* Pushes Title to left, Logout to right */
+    align-items: center;        /* Centers them vertically */
+    margin-bottom: 20px;
+}
+
+/* 3. The "Add Book" Section */
+.add-book {
+    background-color: #f9f9f9;  /* Light grey background to make it stand out */
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+/* The Progress Checkboxes */
+.progress-section label {
+    display: block;             /* Stacks checkboxes on top of each other */
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+/* The Review Box */
+textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;     /* Keeps it inside the lines */
+    border: 1px solid #ccc;
+    font-family: sans-serif;    /* Ensures text inside matches the page */
+    resize: vertical;           /* Allows user to stretch the box down */
+}
+
+/* 4. The Book List */
+.book-entry {
+    border-bottom: 1px solid #eee; /* Light line between books */
+    padding: 10px 0;
+}
+
+.summary {
+    text-align: center;
+    margin-top: 30px;
+    color: #666;
+    font-weight: bold;
+}

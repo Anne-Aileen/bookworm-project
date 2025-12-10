@@ -1,0 +1,38 @@
+ /*Basic Page Setup */
+body {
+    font-family: sans-serif;      /* Standard readable font */
+    background-color: #f0f0f0;    /* Light grey background */
+    text-align: center;           /* Centers all text on the page */
+}
+
+/* 2. The Login Box */
+.login-box {
+    width: 300px;                 /* Not too wide */
+    background-color: white;      
+    margin: 50px auto;            /* Top margin 50px, "auto" centers it left/right */
+    padding: 30px;
+    border: 1px solid #ccc;       /* Simple grey border */
+    border-radius: 8px;           /* Rounded corners */
+}
+
+/* 3. Inputs and Buttons (Shared Styles) */
+/* We group these because they all need the same size */
+input, .social-btn, .button-link {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;                /* Small gap between items */
+    box-sizing: border-box;       /* Keeps padding from breaking the layout */
+}
+
+/* 4. Specific Colors */
+.google-btn    { background-color: #db4437; color: white; border: none; }
+.goodreads-btn { background-color: #8c7356; color: white; border: none; }
+.apple-btn     { background-color: black;   color: white; border: none; }
+
+/* The "Sign Up" Link Button */
+.button-link {
+    display: block;               /* Makes the link fill the width */
+    background-color: green;
+    color: white;
+    text-decoration: none;        /* Removes the underline */
+}

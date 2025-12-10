@@ -1,0 +1,62 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Tracker - Bookworm</title>
+    <link rel="stylesheet" href="bookwormTracker.css">
+</head>
+<body>
+    <div class="container">
+
+        <header style="display: flex; justify-content: space-between; align-items: center;">
+            <div>
+                <h1>My Reading Tracker</h1>
+                <p>Welcome, Reader!</p>
+            </div>
+            
+        </header>
+
+        <hr>
+
+        <div class="add-book">
+            <h3>Log a New Book</h3>
+            
+            <input type="text" id="book-title" placeholder="Book Title">
+            <input type="text" id="book-author" placeholder="Author (optional)">
+            
+            <div class="progress-section" style="margin: 15px 0;">
+                <p style="margin-bottom: 5px;"><strong>Reading Progress:</strong></p>
+                <label><input type="checkbox"> 25% Started</label>
+                <label><input type="checkbox"> 50% Halfway</label>
+                <label><input type="checkbox"> 75% Almost there</label>
+                <label><input type="checkbox"> 100% Finished</label>
+            </div>
+
+            <div class="review-section">
+                <textarea placeholder="Write your review here..." rows="3" style="width:100%; margin-bottom:10px;"></textarea>
+            </div>
+
+            <button>Save to Library</button>
+        </div>
+
+        <div id="book-list">
+            <h3>My Library</h3>
+            <div id="books-container">
+                <div class="book-entry">
+                    <strong>Write Me For You </strong> - <em>Finished (100%)</em>
+                    <p>"A tragic story of love and the American Dream."</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="summary">
+            <h3>This Month's Summary</h3>
+            <p>Books finished this month: 1</p>
+        </div>
+        <button
+        href="index.html" style="color: red; text-decoration: none;">Logout</a>
+        >
+    </div>
+</body>
+</html>
